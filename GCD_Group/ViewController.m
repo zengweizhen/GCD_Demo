@@ -55,7 +55,7 @@
 - (void) networking:(NSInteger)index group:(dispatch_group_t)group{
     
     ///通知group，下面的任务马上要放到group中执行了
-    //和内存管理的引用计数类似，我们可以认为group也持有一个整形变量(只是假设)，当调用enter时计数加1，调用leave时计数减1，当计数为0时会调用dispatch_group_wait会停止等待；
+    //和内存管理的引用计数类似，我们可以认为group也持有一个整形变量(只是假设)，当调用enter时计数加1，调用leave时计数减1，当计数为0时会调用dispatch_group_wait会结束等待；
     dispatch_group_enter(group);
     NSMutableDictionary *params = [[NSMutableDictionary alloc]init];
     [params setValue:@"参数" forKey:@"key"];
@@ -69,6 +69,7 @@
         dispatch_group_leave(group);
     }];
     //当dispatch_group_enter的时候计数器加一,线程就会进入等待状态 当dispatch_group_leave的时候计数器减一线程会自动结束等待,这样就实现了医异步的网络请求同步处理
+    //会把队列组中的任务按顺序执行
     dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
 }
 
