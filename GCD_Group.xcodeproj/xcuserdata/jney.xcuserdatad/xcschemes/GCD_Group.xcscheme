@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B445C0CF1F2AE5FD00BF1BC2"
+               BuildableName = "GCD_Group.app"
+               BlueprintName = "GCD_Group"
+               ReferencedContainer = "container:GCD_Group.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B445C0E81F2AE5FE00BF1BC2"
+               BuildableName = "GCD_GroupTests.xctest"
+               BlueprintName = "GCD_GroupTests"
+               ReferencedContainer = "container:GCD_Group.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B445C0F31F2AE5FE00BF1BC2"
+               BuildableName = "GCD_GroupUITests.xctest"
+               BlueprintName = "GCD_GroupUITests"
+               ReferencedContainer = "container:GCD_Group.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B445C0CF1F2AE5FD00BF1BC2"
+            BuildableName = "GCD_Group.app"
+            BlueprintName = "GCD_Group"
+            ReferencedContainer = "container:GCD_Group.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B445C0CF1F2AE5FD00BF1BC2"
+            BuildableName = "GCD_Group.app"
+            BlueprintName = "GCD_Group"
+            ReferencedContainer = "container:GCD_Group.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B445C0CF1F2AE5FD00BF1BC2"
+            BuildableName = "GCD_Group.app"
+            BlueprintName = "GCD_Group"
+            ReferencedContainer = "container:GCD_Group.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
